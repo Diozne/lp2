@@ -1,0 +1,69 @@
+{
+	"name": "os-gui",
+	"description": "Retro OS styles & components for the web",
+	"version": "0.6.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/1j01/os-gui.git"
+	},
+	"bugs": {
+		"url": "https://github.com/1j01/os-gui/issues"
+	},
+	"license": "MIT",
+	"keywords": [
+		"os",
+		"operating-system",
+		"gui",
+		"ui",
+		"ui-components",
+		"components",
+		"ui-toolkit",
+		"toolkit",
+		"retro",
+		"classic",
+		"vaporwave",
+		"98",
+		"95",
+		"90s",
+		"windows",
+		"window",
+		"windowing",
+		"menubar",
+		"menubars",
+		"menus",
+		"menu",
+		"context-menu",
+		"context-menus",
+		"browser",
+		"web-based",
+		"css",
+		"styles",
+		"stylesheet",
+		"theme"
+	],
+	"files": [
+		"demo/",
+		"index.html",
+		"build/",
+		"$MenuBar.js",
+		"MenuBar.js",
+		"$Window.js",
+		"parse-theme.js"
+	],
+	"scripts": {
+		"start": "run-p watch-css live-server",
+		"prestart": "mkdirp build",
+		"prewatch": "mkdirp build",
+		"watch-css": "postcss src/**/*.css --base src --dir build --map --watch --poll",
+		"live-server": "live-server"
+	},
+	"devDependencies": {
+		"autoprefixer": "10.3.3",
+		"live-server": "1.2.1",
+		"mkdirp": "1.0.4",
+		"npm-run-all": "4.1.5",
+		"postcss-cli": "8.3.1",
+		"postcss-url": "10.1.3",
+		"precss": "4.0.0"
+	}
+}
